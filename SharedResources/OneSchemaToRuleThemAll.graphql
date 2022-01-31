@@ -1,0 +1,29 @@
+﻿type Query {
+    people(input: PersonInput): PersonPayload
+}
+
+input PersonInput {
+    "Optional filter that allows to return only persons with the specified First Name."
+    onlyIncludeFirstNames: [String!]
+}
+
+interface IPerson {
+    firstName: String!
+    lastName:  String!
+}
+
+type Student implements IPerson {
+    firstName: String!
+    lastName:  String!
+    grade:     Int!
+}
+
+type Teacher implements IPerson {
+    firstName: String!
+    lastName:  String!
+    subjects: [String!]!
+}
+
+type PersonPayload {
+    encounteredPersons: [IPerson!]!
+}

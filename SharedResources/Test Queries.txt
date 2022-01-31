@@ -1,0 +1,23 @@
+﻿#Returns all specified people
+query getAllPeople {
+  people {
+    ...peopleData
+  }
+}
+
+#Only returns people who's first name is either "Max" or "Moritz"
+query getMaxAndMoritz {
+  people(input:{onlyIncludeFirstNames:["Max", "Moritz"]})
+  {
+    ...peopleData
+  }
+}
+
+fragment peopleData on PersonPayload {
+  encounteredPersons {
+      firstName
+      lastName
+      ... on Student { grade }
+      ... on Teacher { subjects }
+    }
+}

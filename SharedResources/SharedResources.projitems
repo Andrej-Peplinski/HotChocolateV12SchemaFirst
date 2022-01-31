@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>16b27876-3868-41c2-9b1f-dac1cca47b5a</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>SharedResources</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)OneSchemaToRuleThemAll.graphql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\IPerson.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\PersonInput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\PersonPayload.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\PersonRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\Student.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\Teacher.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resolvers\Query.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Test Queries.txt" />
+  </ItemGroup>
+</Project>
