@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<RootNamespace>HC_V12_MVC</RootNamespace>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<!--
+		Added this pre-compiler flag that showcases how the DTO's in the Shared library 
+		need to be rewritten in order to work with HotChocolate v.12.6
+		-->
+		<DefineConstants>ADJUST_DTOS_TO_HC12</DefineConstants>
+	</PropertyGroup>
+
+	<Import Project="..\SharedResources\SharedResources.projitems" Label="Shared" />
+
+	<ItemGroup>
+		<PackageReference Include="HotChocolate.AspNetCore" Version="12.6.0" />
+	</ItemGroup>
+
+</Project>

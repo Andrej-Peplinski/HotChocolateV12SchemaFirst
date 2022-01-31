@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace HC_V11
+namespace HC_V12_MVC
 {
     public class Program
     {

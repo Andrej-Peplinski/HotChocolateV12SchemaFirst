@@ -7,7 +7,12 @@ using System.Threading.Tasks;
 
 namespace SharedResources.Resolvers
 {
-    internal sealed class Query
+#if ADJUST_DTOS_TO_HC12
+    public
+#else
+    internal
+#endif
+    sealed class Query
     {
         public Task<PersonPayload> GetPeopleAsync(
             PersonInput? input,

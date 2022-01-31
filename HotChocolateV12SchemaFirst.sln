@@ -7,10 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HC-V11", "HC-V11\HC-V11.csp
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SharedResources", "SharedResources\SharedResources.shproj", "{16B27876-3868-41C2-9B1F-DAC1CCA47B5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HC-V12-MVC", "HC-V12-MVC\HC-V12-MVC.csproj", "{EB285961-9B92-4EDC-87B7-AEE0E4028A92}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		SharedResources\SharedResources.projitems*{16b27876-3868-41c2-9b1f-dac1cca47b5a}*SharedItemsImports = 13
 		SharedResources\SharedResources.projitems*{21a9ccc9-d5c8-469b-9a7f-0f54ccfd88de}*SharedItemsImports = 5
+		SharedResources\SharedResources.projitems*{eb285961-9b92-4edc-87b7-aee0e4028a92}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +24,10 @@ Global
 		{21A9CCC9-D5C8-469B-9A7F-0F54CCFD88DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21A9CCC9-D5C8-469B-9A7F-0F54CCFD88DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21A9CCC9-D5C8-469B-9A7F-0F54CCFD88DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB285961-9B92-4EDC-87B7-AEE0E4028A92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB285961-9B92-4EDC-87B7-AEE0E4028A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB285961-9B92-4EDC-87B7-AEE0E4028A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB285961-9B92-4EDC-87B7-AEE0E4028A92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

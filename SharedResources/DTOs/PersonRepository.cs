@@ -4,7 +4,12 @@ using System.Linq;
 
 namespace SharedResources.DTOs
 {
-    internal class PersonRepository
+#if ADJUST_DTOS_TO_HC12
+    public
+#else
+    internal
+#endif
+    class PersonRepository
     {
         private static readonly List<IPerson> _people = new() { 
             new Student("Max", "Trasto", 10),
