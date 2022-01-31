@@ -1,0 +1,1 @@
+HotChocolateV12SchemaFirst
