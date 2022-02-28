@@ -37,14 +37,14 @@ namespace HC_V12_MVC
                 //.BindComplexType<PersonPayload>()     // <- No longer necessary
 
                 //.BindComplexType<Student>()   -> Now replaced by...
-                .AddResolver(typeName: "Student", fieldName: "firstName", resolver: context => context.Parent<Student>().FirstName)
-                .AddResolver(typeName: "Student", fieldName: "lastName",  resolver: context => context.Parent<Student>().LastName)
-                .AddResolver(typeName: "Student", fieldName: "grade",     resolver: context => context.Parent<Student>().Grade)
+                //.AddResolver(typeName: "Student", fieldName: "firstName", resolver: context => context.Parent<Student>().FirstName)
+                //.AddResolver(typeName: "Student", fieldName: "lastName",  resolver: context => context.Parent<Student>().LastName)
+                //.AddResolver(typeName: "Student", fieldName: "grade",     resolver: context => context.Parent<Student>().Grade)
 
                 //.BindComplexType<Teacher>()   -> Now replaced by...
-                .AddResolver(typeName: "Teacher", fieldName: "firstName", resolver: context => context.Parent<Teacher>().FirstName)
-                .AddResolver(typeName: "Teacher", fieldName: "lastName",  resolver: context => context.Parent<Teacher>().LastName)
-                .AddResolver(typeName: "Teacher", fieldName: "subjects",  resolver: context => context.Parent<Teacher>().Subjects)
+                //.AddResolver(typeName: "Teacher", fieldName: "firstName", resolver: context => context.Parent<Teacher>().FirstName)
+                //.AddResolver(typeName: "Teacher", fieldName: "lastName",  resolver: context => context.Parent<Teacher>().LastName)
+                //.AddResolver(typeName: "Teacher", fieldName: "subjects",  resolver: context => context.Parent<Teacher>().Subjects)
                 ;
         }
 
